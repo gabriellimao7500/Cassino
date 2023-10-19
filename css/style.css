@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url("../fonts/Shrikhand-Regular.ttf");
+ }
+ @font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+ }
+
+
+body{
+    background: #252F38;
+}
+
+.login,.cadastro{
+    margin-inline: 18px;
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 259.259% */
+    letter-spacing: 1.35px;
+}
+
+.atu-money{
+    margin-right: 15px;
+    color: #FFF;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 155.556% */
+}
+
+.sidebar{
+    background-color: #0F1923;
+    width: 18rem;
+    height: 82vh;
+    position: fixed;
+    left: 45px;
+    bottom: 0px;
+    border-radius: 20px 20px 5px 0px;
+}
