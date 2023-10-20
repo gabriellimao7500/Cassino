@@ -14,33 +14,33 @@ body{
 }
 
 .um{
-    transition: 5s ease-in-out;
-    transform: rotate(960deg);
+    transition: 9s ease-in-out;
+    transform: rotate(4920deg);
 }
 
 .dois{
-    transition: 5s ease-in-out;
-    transform: rotate(900deg);
+    transition: 9s ease-in-out;
+    transform: rotate(4860deg);
 }
 
 .tres{
-    transition: 5s ease-in-out;
-    transform: rotate(1020deg);
+    transition: 9s ease-in-out;
+    transform: rotate(4080deg);
 }
 
 .quatro{
-    transition: 5s ease-in-out;
-    transform: rotate(1080deg);
+    transition: 9s ease-in-out;
+    transform: rotate(5040deg);
 }
 
 .cinco{
-    transition: 5s ease-in-out;
-    transform: rotate(1140deg);
+    transition: 9s ease-in-out;
+    transform: rotate(5100deg);
 }
 
 .seis{
-    transition: 5s ease-in-out;
-    transform: rotate(1200deg);
+    transition: 9s ease-in-out;
+    transform: rotate(5160deg);
 }
 
 .btn{
@@ -49,9 +49,8 @@ body{
     position: relative;
     bottom: -200px;
 }.btn:hover{
-    width: 200px;
-    height: 70px;
-    transition: 0.5s ease-in-out;
+    transform: scale(90%);
+    transition: 0.2s ease-in;
 }
 
 .spintest{
