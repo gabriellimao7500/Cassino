@@ -1,9 +1,9 @@
 const roulete = document.querySelector('.spin')
-const button = document.querySelector('.btn')
+const button = document.querySelector('.button')
 const win = document.querySelector('.win')
 const yeaa = document.querySelector('.yeaa')
 const huuu = document.querySelector('.huuu')
-const roletaSound = document.querySelector('.roleta')
+const roletaSound = document.querySelector('.RoletaSound')
 let max = 6
 let min = 1
 

@@ -20,6 +20,7 @@ a{
 
 body{
     background: #252F38;
+    overflow-y: hidden;
 }
 
 .login,.cadastro{
@@ -39,7 +40,7 @@ body{
     color: #FFF;
     text-align: center;
     font-family: Shrikhand;
-    font-size: 45px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 70px; /* 155.556% */
@@ -47,10 +48,132 @@ body{
 
 .sidebar{
     background-color: #0F1923;
-    width: 18rem;
-    height: 82vh;
+    width: 22vw;
+    height: 84vh;
     position: fixed;
-    left: 45px;
+    left: 20px;
     bottom: 0px;
     border-radius: 20px 20px 5px 0px;
+}
+
+.title-jogos{
+    color: #F12C4C;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.3px;
+}
+
+.title-games{
+    color: #F7F7F7;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.roleta{
+    cursor: pointer;
+}
+
+.roleta:hover > :not(div){
+    animation: girar 1s infinite ease-in-out;
+}
+
+
+.roleta-add{
+    cursor: pointer;
+}
+
+.roleta-add:hover div svg{
+    animation: girar 1s infinite ease-in-out;
+}
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.more-cartas{
+    margin-top: 16px;
+}
+
+.cartas{
+    margin-left: -23px;
+    rotate: 25deg;
+    transition: 0.2s linear;
+}
+
+.black-jack{
+    cursor: pointer;
+}
+
+.black-jack:hover > :not(.title-games,.more-cartas){
+    transition: 0.2s linear;
+    margin-left: -8px;
+    rotate: 0deg;
+}
+
+.bandeira{
+    left: 9.5vw;
+    margin-bottom: 100px;
+    position: fixed;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.mines{
+    cursor: pointer;
+}
+
+.mines:hover > :not(.title-games,.diamante){
+    margin-bottom: 58px;
+    opacity: 1;
+}
+
+.tela{
+    border-radius: 20px 0px 0px 0px;
+    width: 74vw;
+    height: 200vh;
+    background-color: #0F1923;
+}
+
+.home{
+    margin-left: -20px;
+}
+
+.title-roleta{
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 61px; /* 129.787% */
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+}
+
+.roleta-add{
+    width: 95%;
+    height: 400px;
+    border-radius: 50px;
+    background-color: #252F38;
+}
+
+.title-add{
+color: #F7F7F7;
+font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }

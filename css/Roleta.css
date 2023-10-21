@@ -1,14 +1,3 @@
-
-body{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 100vw;
-    height: 100vh;
-    background-color: #0F1923;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .spin{
     transition: 0.2s ease-in-out;
 }
@@ -43,12 +32,12 @@ body{
     transform: rotate(5160deg);
 }
 
-.btn{
+.button{
     cursor: pointer;
     transition: 0.5s ease-in-out;
     position: relative;
     bottom: -200px;
-}.btn:hover{
+}.button:hover{
     transform: scale(90%);
     transition: 0.2s ease-in;
 }
@@ -61,7 +50,7 @@ body{
 .win{
     position: fixed;
     top: calc(50vh - height);
-    left: calc(50vw - width);
+    left: 35vw;
     color: #F12C4C;
     font-family: Shrikhand;
     font-size: 200px;
