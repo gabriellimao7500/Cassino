@@ -19,8 +19,7 @@ a{
 
 
 body{
-    background: #252F38;
-    overflow-y: hidden;
+    background: #0F1923;
 }
 
 .login,.cadastro{
@@ -47,7 +46,6 @@ body{
 }
 
 .sidebar{
-    background-color: #0F1923;
     width: 22vw;
     height: 84vh;
     position: fixed;
@@ -140,14 +138,68 @@ body{
 }
 
 .tela{
-    border-radius: 20px 0px 0px 0px;
     width: 74vw;
-    height: 200vh;
-    background-color: #0F1923;
+    height: 84vh;
+    overflow-y: auto;
+}
+
+.tela::-webkit-scrollbar{
+    width: 0px;
+}
+
+.manuel-gomes{
+    height: 430px;
+    width: 950px;
+    border-radius: 20px;
+    background: #252F38;
+}
+
+.sub-adds{
+    margin-top: 100px;
+}
+
+.cristiano{
+    width: 360px;
+    height: 500px;
+    background-color: #F12C4C;
+}
+
+.roleta-title{
+    margin-right: 15px;
+    width: 250px;
+    height: 300px;
+}
+
+.cristiano-add{
+    width: 360px;
+    height: 360px;
+    margin-top: -40px;
+    background-color: white;
+}
+
+.cristiano-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.manuel-title{
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px; /* 116.216% */
+    letter-spacing: 0.555px;
 }
 
 .home{
-    margin-left: -20px;
+    margin-left: 50px;
 }
 
 .title-roleta{
