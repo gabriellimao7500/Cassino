@@ -155,13 +155,13 @@ body{
 }
 
 .sub-adds{
-    margin-top: 100px;
+    width: 70vw;
+    margin-top: 10px;
 }
 
 .cristiano{
     width: 360px;
     height: 500px;
-    background-color: #F12C4C;
 }
 
 .roleta-title{
@@ -174,7 +174,19 @@ body{
     width: 360px;
     height: 360px;
     margin-top: -40px;
-    background-color: white;
+    border-radius: 40px;
+    background: #252F38;
+}
+
+.manuel{
+    display: flex;
+    flex-shrink: 1;
+}
+
+.cristiano-carta{
+    z-index: 1;
+    margin-bottom: -40%;
+    margin-right: -60%;
 }
 
 .cristiano-title{
@@ -185,6 +197,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: -50px;
 }
 
 .manuel-title{
