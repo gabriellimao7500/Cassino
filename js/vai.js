@@ -121,9 +121,6 @@ function winm(){
         moneyAtual += 5
         money.innerHTML = moneyAtual;
     }
-
-    console.log(IN)
-
 }
 
 function losem(){

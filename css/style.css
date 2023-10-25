@@ -132,7 +132,7 @@ body{
     cursor: pointer;
 }
 
-.mines:hover > :not(.title-games,.diamante){
+.mines:hover > :not(.title-games,.diamante-icon,.diamante){
     margin-bottom: 58px;
     opacity: 1;
 }

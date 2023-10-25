@@ -1,4 +1,7 @@
 //money
+
+
+
 const moneyadd = document.querySelector('.money')
 const addmoney = document.querySelector('.add-money')
 const vinteAdd = document.querySelector('.vt')
@@ -9,7 +12,9 @@ money.innerHTML = moneyAtual;
 
 
 moneyadd.addEventListener("click", function(event){
+    console.log("oi")
     addmoney.classList.toggle('add-money-on')
+    console.log("io")
 })
 
 vinteAdd.addEventListener("click", function(event){
