@@ -2,19 +2,24 @@
 
 const money = document.querySelector('.atu-money')
 const moneyR = document.querySelector('.dinheiro-retirada')
+const Retirar = document.querySelector('.Retirar')
 
-var moneyAtual = 0
-var dinheiroRecebimento = 0
+
+var moneyAtual = parseFloat(localStorage.getItem("money"))
 money.innerHTML = moneyAtual;
+var dinheiroRecebimento = 0
+
+console.log(localStorage.getItem("money"))
 
 const vinte = document.querySelector('.vinte')
 const cinquenta = document.querySelector('.cinquenta')
 const sessenta = document.querySelector('.sessenta')
 
-var IN = 1
+var IN = 3
+
 
 vinte.addEventListener("click", function(event){
-    IN = 1
+    IN = 3
     vinte.classList.add('em')
     cinquenta.classList.remove('em')
     sessenta.classList.remove('em')
@@ -34,7 +39,7 @@ cinquenta.addEventListener("click", function(event){
 })
 
 sessenta.addEventListener("click", function(event){
-    IN = 3
+    IN = 1
     vinte.classList.remove('em')
     cinquenta.classList.remove('em')
     sessenta.classList.add('em')
@@ -107,10 +112,10 @@ const CreateCard = () =>{
                 dinheiroRecebimento += 0.25
                 moneyR.innerHTML = dinheiroRecebimento;
             }else if(IN == 2){
-                dinheiroRecebimento += 1
+                dinheiroRecebimento += 1.00
                 moneyR.innerHTML = dinheiroRecebimento;
-            }else{
-                dinheiroRecebimento += 2
+            }else if(IN == 3){
+                dinheiroRecebimento += 2.00
                 moneyR.innerHTML = dinheiroRecebimento;
             }
         }
@@ -143,8 +148,18 @@ const CreateCard = () =>{
         });
     }
 
+    
+    Retirar.addEventListener("click", function(event){
+        moneyAtual += dinheiroRecebimento
+        localStorage.setItem("money",moneyAtual)
+        money.innerHTML = moneyAtual;
+        setTimeout(reload,10)
+        function reload() {
+            location.reload()
+        }
+    })
+
 }
 CreateCard()
 
 
-  
