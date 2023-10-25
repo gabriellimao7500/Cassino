@@ -8,6 +8,8 @@ money.innerHTML = moneyAtual;
 
 
 
+const trava = document.querySelector(".not")
+
 //girar
 
 const roulete = document.querySelector('.spin')
@@ -102,7 +104,7 @@ button.addEventListener("click", function(event){
         }    
 
     roletaSound.play()
-
+    trava.classList.remove("none")
     setTimeout(resetspin, 12000);
     }                         
 } )
@@ -113,12 +115,15 @@ function winm(){
     yeaa.play()
     if(IN == 1){
         moneyAtual += 15
+        localStorage.setItem("money", moneyAtual)
         money.innerHTML = moneyAtual;
     }else if(IN == 2){
         moneyAtual += 7.50
+        localStorage.setItem("money", moneyAtual)
         money.innerHTML = moneyAtual;
     }else{
         moneyAtual += 5
+        localStorage.setItem("money", moneyAtual)
         money.innerHTML = moneyAtual;
     }
 }
@@ -129,12 +134,15 @@ function losem(){
     huuu.play()
     if(IN == 1){
         moneyAtual -= 15
+        localStorage.setItem("money", moneyAtual)
         money.innerHTML = moneyAtual;
     }else if(IN == 2){
         moneyAtual -= 7.50
+        localStorage.setItem("money", moneyAtual)
         money.innerHTML = moneyAtual;
     }else{
         moneyAtual -= 5
+        localStorage.setItem("money", moneyAtual)
         money.innerHTML = moneyAtual;
     }
 
@@ -150,4 +158,5 @@ function resetspin(){
     roulete.classList.remove('quatro')
     roulete.classList.remove('cinco')
     roulete.classList.remove('seis')
+    trava.classList.add("none")
 }

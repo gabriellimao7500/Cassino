@@ -134,15 +134,15 @@ const CreateCard = () =>{
             if(moneyAtual > 0){
                 BombSound.play()
             if(IN == 1){
-                moneyAtual -= 5
-                localStorage.setItem("money",moneyAtual)
-                money.innerHTML = moneyAtual;
-            }else if(IN == 2){
                 moneyAtual -= 10
                 localStorage.setItem("money",moneyAtual)
                 money.innerHTML = moneyAtual;
-            }else{
+            }else if(IN == 2){
                 moneyAtual -= 20
+                localStorage.setItem("money",moneyAtual)
+                money.innerHTML = moneyAtual;
+            }else{
+                moneyAtual -= 40
                 localStorage.setItem("money",moneyAtual)
                 money.innerHTML = moneyAtual;
             }
