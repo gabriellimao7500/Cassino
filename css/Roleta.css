@@ -33,13 +33,22 @@
 }
 
 .button{
+    width: 225px;
+    height: 175px;
+    flex-shrink: 0;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     position: relative;
-    bottom: -200px;
-}.button:hover{
-    transform: scale(90%);
-    transition: 0.2s ease-in;
+    border-radius: 10px 60px 60px 10px;
+    height: 5rem;
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 175% */
+    letter-spacing: 2px;
 }
 
 .spintest{
@@ -70,4 +79,32 @@
 .winm{
     transition: 0.2s ease-in-out;
     opacity: 5;
+}
+
+
+.porc{
+    cursor: pointer;
+    background: #252F38;
+    width: 340px;
+    height: 78px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 155.556% */
+}
+
+.em{
+   background-color: #F12C4C; 
+}
+
+.cqa{
+    fill: #F12C4C;
+}
+
+.mena{
+    fill: #04D47C;
 }

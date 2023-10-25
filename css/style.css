@@ -212,7 +212,10 @@ body{
 }
 
 .home{
+    width: 300px;
+    height: 84px;
     margin-left: 50px;
+    transition: 0.2s linear;
 }
 
 .title-roleta{
@@ -241,4 +244,120 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+}
+
+.off{
+    opacity: 0;
+    display: none;
+}
+
+.on{
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+
+.bet{
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.quadmn{
+    width: 160px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F12C4C;
+}
+
+.mn{
+    color: #0F1923;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.home:hover .mn div{
+    transition: 0.2s ease-in-out;
+    font-size: 58px;
+    color: #04D47C;
+}
+
+.home:hover{
+    transition: 0.2s linear;
+    background: #252F38;
+    border-radius: 20px;
+}
+
+
+.mn div{
+    transition: 0.2s ease-in-out;
+}
+
+.add-money{
+    z-index: 5;
+    border-radius: 40px;
+    background: rgba(37, 47, 56, 0.95);
+    width: 350px;
+    height: 450px;
+    position: fixed;
+    top: -500px;
+    left: calc(50vw - 150px);
+    transition: 0.2s ease-in;
+}
+
+.add-money-on{
+    top: 100px;
+    left: calc(50vw - 150px);
+    transition: 0.2s ease-out;
+}
+
+.money-title{
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rs{
+    margin-left: -10px;
+    width: 50px;
+    color: #FFF;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; 
+}
+
+
+.money-add{
+    width: 250px;
+    height: 75px;
+    flex-shrink: 0;
+    color: #F7F7F7;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.money{
+    cursor: pointer;
 }
