@@ -13,6 +13,12 @@ money.innerHTML = moneyAtual;
 //localStorage.setItem("money",0)
 
 
+if(isNaN(moneyAtual) || moneyAtual == null){
+    localStorage.getItem("money", 0)
+    var moneyAtual = 0
+    money.innerHTML = moneyAtual;
+}
+
 moneyadd.addEventListener("click", function(event){
     addmoney.classList.toggle('add-money-on')
 })

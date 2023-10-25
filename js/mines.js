@@ -18,6 +18,7 @@ const sessenta = document.querySelector('.sessenta')
 var IN = 3
 
 
+
 vinte.addEventListener("click", function(event){
     IN = 3
     vinte.classList.add('em')
@@ -96,56 +97,74 @@ const CreateCard = () =>{
     const DiamontSound = document.querySelector(".diamante-sound")
 
     function addDiamanteClass(event) {
-    event.target.classList.add("diamante");
-    setTimeout(removeCard,200)
-    function removeCard(){
+    if(moneyAtual > 0){
+        event.target.classList.add("diamante");
+        setTimeout(removeCard,200)
+        function removeCard(){
         event.target.classList.remove("carta");
+        }       
     }
     }
     
     cards.forEach((carta) => {
+
     carta.addEventListener("click", addDiamanteClass);
     carta.addEventListener("click", () => {
-        if(carta.classList.contains("carta") == true){
-            DiamontSound.play()
-            if(IN == 1){
-                dinheiroRecebimento += 0.25
-                moneyR.innerHTML = dinheiroRecebimento;
-            }else if(IN == 2){
-                dinheiroRecebimento += 1.00
-                moneyR.innerHTML = dinheiroRecebimento;
-            }else if(IN == 3){
-                dinheiroRecebimento += 2.00
-                moneyR.innerHTML = dinheiroRecebimento;
+        if(moneyAtual > 0){
+            if(carta.classList.contains("carta") == true){
+                DiamontSound.play()
+                if(IN == 1){
+                    dinheiroRecebimento += 0.25
+                    moneyR.innerHTML = dinheiroRecebimento;
+                }else if(IN == 2){
+                    dinheiroRecebimento += 1.00
+                    moneyR.innerHTML = dinheiroRecebimento;
+                }else if(IN == 3){
+                    dinheiroRecebimento += 2.00
+                    moneyR.innerHTML = dinheiroRecebimento;
+                }
             }
         }
-
     });
     });
 
     bomb.forEach((bomb) => {
         bomb.addEventListener("click",explosao)
         bomb.addEventListener("click",() => {
-            BombSound.play()
+            if(moneyAtual > 0){
+                BombSound.play()
             if(IN == 1){
                 moneyAtual -= 5
+                localStorage.setItem("money",moneyAtual)
                 money.innerHTML = moneyAtual;
             }else if(IN == 2){
                 moneyAtual -= 10
+                localStorage.setItem("money",moneyAtual)
                 money.innerHTML = moneyAtual;
             }else{
                 moneyAtual -= 20
+                localStorage.setItem("money",moneyAtual)
                 money.innerHTML = moneyAtual;
             }
+            setTimeout(reload,1000)
+            function reload() {
+                location.reload()
+            }
+
+            }
+            
         })
     })
     function explosao(){
-        cards.forEach((carta) => {
-            carta.classList.add('diamante');
-        });
-        bomb.forEach((bomba) => {
-            bomba.classList.add('explode');
-        });
+        if(moneyAtual > 0){
+            cards.forEach((carta) => {
+                carta.classList.add('diamante');
+            });
+            bomb.forEach((bomba) => {
+                bomba.classList.add('explode');
+            }); 
+        }
+
     }
 
     
