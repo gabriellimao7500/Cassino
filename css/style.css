@@ -361,3 +361,12 @@ line-height: normal;
 .money{
     cursor: pointer;
 }
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.titulo-rogerguedes{
+    color: #F12C4C !important;
+}

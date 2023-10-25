@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/Roleta.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="js/vai.js"></script>
     <script defer src="js/money.js"></script>
+    <script defer src="js/localstorage.js"></script>
     <title>Document</title>
 </head>
 
@@ -41,9 +43,9 @@
                     </svg>
                 </div>
             </div>
-            <div class="Cadastro-login">
-                <a class="login" href="">Login</a>
-                <a href=""><button type="button" class="cadastro btn btn-pink">Cadastre-se</button></a>
+            <div class="cadastro-loginn">
+                <a class="login" href="./html/login.html">Login</a>
+                <a href="./html/cadastro.html"><button type="button" class="cadastro btn btn-pink">Cadastre-se</button></a>
             </div>
         </div>
     </header>
@@ -140,7 +142,8 @@
                     <svg class="cristiano-carta" width="100" height="111" viewBox="0 0 127 111" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M83.8281 74.7713L91.1336 50.5215L68.582 36.2053L61.2766 60.4552L83.8281 74.7713ZM12.6797 98.2907L7.43882 95.9534C4.15668 94.6874 1.93329 92.5195 0.768657 89.4498C-0.395975 86.3801 -0.237161 83.3376 1.2451 80.3225L12.6797 57.5335V98.2907ZM38.0898 111C34.5959 111 31.6039 109.831 29.1137 107.494C26.6235 105.157 25.3805 102.381 25.3848 99.1672V64.2533L42.3778 107.202C42.6954 107.884 42.9601 108.542 43.1719 109.177C43.3836 109.812 43.7542 110.42 44.2836 111H38.0898ZM70.8054 110.27C67.5233 111.341 64.2411 111.195 60.959 109.831C57.6768 108.468 55.4534 106.277 54.2888 103.258L26.1788 31.8228C25.0142 28.8037 25.173 25.8081 26.6553 22.8358C28.1375 19.8634 30.5197 17.8436 33.8019 16.7762L81.6047 0.707043C84.8869 -0.364235 88.1436 -0.218151 91.375 1.14529C94.6063 2.50874 96.8021 4.69999 97.9625 7.71905L126.231 79.1538C127.396 82.1729 127.237 85.1685 125.755 88.1409C124.273 91.1132 121.89 93.133 118.608 94.2004L70.8054 110.27Z" fill="#F12C4C"/>
                         </svg>                        
-                    <div class="cristiano-add"><img src="imgs/criatiano-ronaldo-poker-removebg-preview 1.png" alt="" width="360" height="360"></div>
+                    <div class="cristiano-add"><img src="imgs/criatiano-ronaldo-poker-removebg-preview 1.png" alt="" width="360" height="360">
+                    </div>
                 </a>
                 <a href="html/Mines2.html" class="cristiano d-flex align-items-center justify-content-around flex-column">
                     <div class="cristiano-title">Mines</div>
@@ -150,12 +153,61 @@
                     <div class="cristiano-add"><img src="imgs/Mina.png" alt="" width="360" height="360"></div>
                 </a>
             </div>
+
+            <footer class="text-white pt-5 pb-4">
+
+                <div class="container-footer text-center text-md-left">
+        
+                    <div class="row text-center text-md-left">
+        
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="titulo-rogerguedes text-uppercase font-weight-bold text-warning">BET 369</h5>
+                            <p>A Bet 369 é uma casa de apostas fictícia criada com entusiasmo e dedicação por um grupo de estudantes da ETEC Cidade Tiradentes, com um propósito singular: aprimorar suas habilidades em programação, especialmente em JavaScript e Bootstrap, durante o processo de construção do site. </p>
+                        </div>
+        
+                        <div class="col-md2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="titulo-rogerguedes text-uppercase mb-4 font-weight-bold text-warning">Nossos jogos</h5>
+        
+                            <p>
+                                <a href="./html/Roleta.html" class="text-white" style="text-decoration: none;">Roleta</a>
+                            </p>
+                            <p>
+                                <a href="./html/mines.html" class="text-white" style="text-decoration: none;">Blackjack</a>
+                            </p>
+                            <p>
+                                <a href="./html/blackjack.html" class="text-white" style="text-decoration: none;">Mines</a>
+                            </p>
+        
+                        </div>
+        
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="titulo-rogerguedes text-uppercase mb-4 font-weight-bold text-warning">Sobre nós</h5>
+                            <p>
+                                <a href="./html/sobrenos.html" style="text-decoration: none;">Quem somos nós</a>
+                            </p>
+                            <p>
+                                <a href="./html/sobreosjogos.html" style="text-decoration: none;">Sobre os jogos</a>
+                            </p>
+                            <p>
+                                <a href="./html/politicadeuso.html" style="text-decoration: none;">Política de uso</a>
+                            </p>
+                            <p>
+                                <a href="./html/sobreosjogos.html" style="text-decoration: none;">Sobre os jogos</a>
+                            </p>
+                        </div>
+                    </div>
+        
+                </div>
+        
+            </footer>
+
         </div>
     <div class="add-money d-flex justify-content-around align-items-center flex-column">
         <div class="money-title">Adicionar dinheiro</div>
         <div class="money-add btn vt btn-buy d-flex justify-content-center align-items-center">+25R$</div>
         <div class="money-add btn cqu btn-buy d-flex justify-content-center align-items-center">+50R$</div>
     </div>
+
 </body>
 
 </html>

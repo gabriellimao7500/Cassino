@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url("../fonts/Shrikhand-Regular.ttf");
+ }
+ @font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+ }
+
+body{
+    background: #0F1923;
+    font-family: Roboto;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    width: 25vw; 
+    border: 2px solid #F12C4C;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    color: #F12C4C;
+}
+.center-div {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+button{
+    background-color: #bd4f61 !important;
+    border-color: #bd4f61 !important;
+}
+
+@media (max-width:650px) {
+    fieldset {
+        width: 80% !important;
+    }
+}
