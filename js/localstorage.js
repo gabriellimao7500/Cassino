@@ -1,4 +1,3 @@
-let logado = false;
 
 document.addEventListener("DOMContentLoaded", function () {
     const registroForm = document.getElementById("registro-form");
@@ -48,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Redirecione para a página de boas-vindas ou faça o que for necessário
             window.location.href = "../index.html";
             logado = true;
+            localStorage.set("logado",logado)
 
             const btns = document.querySelector(".cadastro-loginn");
             btns.style.display = "none";

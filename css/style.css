@@ -19,7 +19,10 @@ a{
 
 
 body{
+    width: 100vw;
     background: #0F1923;
+    overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .login,.cadastro{
@@ -370,3 +373,54 @@ footer {
 .titulo-rogerguedes{
     color: #F12C4C !important;
 }
+
+@media (max-width: 650px) {
+     .sidebar{
+      display: none !important;
+    }
+    body{
+        display: flex ;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .manuel-gomes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 100vw;
+        max-height: 550px;
+    }
+    .cristiano{
+        max-width: 20px;
+        max-height: 200px;
+    }
+    .cristiano-carta{
+        max-width: 50px;
+        margin-bottom: -75px;
+        margin-left: 60px;
+    }
+    .cristiano-add{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .cristiano-add img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .sub-adds{
+        max-width: 100vw;
+        min-width: 100vw;
+        max-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .tela{
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+    .cristiano-title{
+        display: none !important;
+    }
+  }
