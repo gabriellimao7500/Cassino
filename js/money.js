@@ -24,13 +24,18 @@ moneyadd.addEventListener("click", function(event){
 })
 
 vinteAdd.addEventListener("click", function(event){
-    moneyAtual += 25
-    localStorage.setItem("money",moneyAtual)
-    money.innerHTML = moneyAtual;
+    if(moneyAtual < 50){
+        moneyAtual += 25
+        localStorage.setItem("money",moneyAtual)
+        money.innerHTML = moneyAtual;
+    }
+
 })
 
 cinquentaAdd.addEventListener("click", function(event){
-    moneyAtual += 50
-    localStorage.setItem("money",moneyAtual)
-    money.innerHTML = moneyAtual;
+    if(moneyAtual < 100){
+        moneyAtual += 50
+        localStorage.setItem("money",moneyAtual)
+        money.innerHTML = moneyAtual;
+    }
 })

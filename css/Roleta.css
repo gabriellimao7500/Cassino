@@ -156,5 +156,10 @@
         width: 100px;
         margin-bottom: -150px;
     }
+    .win{
+        z-index: 100;
+        left: 0px !important;
+        font-size: 150px;
+    }
 
 }
