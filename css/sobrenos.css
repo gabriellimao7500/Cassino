@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-sobre {
+    color: #F12C4C;
+}
+
+.container-sobre {
+    width: 80%;
+}
+
+p {
+    font-size: 20px;
+    text-indent: 1cm;
+    word-wrap: break-word !important;
+}
+
+@media (max-width:500px) {
+    h1{
+        color: aqua !important;
+    }
+}

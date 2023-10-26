@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const registroForm = document.getElementById("registro-form");
 
@@ -18,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //verifica se o usuário já existe no localstorage
         if (localStorage.getItem(username)) {
             alert("Usuário já existe. Escolha outro nome de usuário.");
+            window.location.href = "./login.html";
         } else {
             //Armazena as informações do usuário no localStorage
             localStorage.setItem(username, password);
@@ -46,11 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Login bem-sucedido. Redirecionando para a página de boas-vindas.");
             // Redirecione para a página de boas-vindas ou faça o que for necessário
             window.location.href = "../index.html";
-            logado = true;
-            localStorage.set("logado",logado)
-
-            const btns = document.querySelector(".cadastro-loginn");
-            btns.style.display = "none";
         } else {
             alert("Credenciais inválidas. Tente novamente.");
         }

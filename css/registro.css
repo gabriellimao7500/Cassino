@@ -23,6 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 
 fieldset {
@@ -59,7 +60,9 @@ button{
 }
 
 @media (max-width:650px) {
-    fieldset {
-        width: 80% !important;
+    
+    h1{
+        color: aqua !important;
     }
+
 }
