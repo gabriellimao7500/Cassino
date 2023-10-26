@@ -125,3 +125,19 @@
 .none{
     display: none;
 }
+
+@media (max-width: 1030px) {
+    .spintest{
+        display: flex;
+        width: 100vw;
+    }
+    .spin{
+        width: 300px;
+        margin-bottom: -150px;
+    }
+    .arrow{
+        width: 100px;
+        margin-bottom: -150px;
+    }
+
+}

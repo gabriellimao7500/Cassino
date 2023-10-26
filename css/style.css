@@ -374,7 +374,7 @@ footer {
     color: #F12C4C !important;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1030px) {
      .sidebar{
       display: none !important;
     }
@@ -422,5 +422,29 @@ footer {
     }
     .cristiano-title{
         display: none !important;
+    }
+    
+    .home{
+        z-index: 7;
+    }
+    .container-fluid{
+        flex-direction: column !important;
+    }
+    .play{
+        position: relative;
+        margin-top: 300px;
+    }
+    .vinte,.cinquenta,.sessenta{
+        width: 100px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        font-family: roboto;
+    }
+    .button{
+        position: fixed;
+        bottom: 200px;
+        right: 100px;
     }
   }
