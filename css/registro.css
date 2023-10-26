@@ -58,11 +58,3 @@ button{
     background-color: #bd4f61 !important;
     border-color: #bd4f61 !important;
 }
-
-@media (max-width:650px) {
-    
-    h1{
-        color: aqua !important;
-    }
-
-}

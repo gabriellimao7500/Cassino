@@ -425,7 +425,7 @@ footer {
     }
     
     .home{
-        z-index: 7;
+        z-index: 11;
     }
     .container-fluid{
         flex-direction: column !important;
@@ -448,6 +448,9 @@ footer {
         right: 100px;
     }
     .money{
-        z-index: 8;
+        z-index: 10;
+    }
+    .cadastro-loginn{
+        z-index: 11;
     }
   }
