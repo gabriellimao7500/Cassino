@@ -103,6 +103,8 @@ const CreateCard = () =>{
         function removeCard(){
         event.target.classList.remove("carta");
         }       
+    }else{
+        window.alert("VOCÊ ETÁ SEM SALDO, CLIQUE NO SALDO E EM ADICIONAR")
     }
     }
     
@@ -151,6 +153,8 @@ const CreateCard = () =>{
                 location.reload()
             }
 
+            }else{
+                window.alert("VOCÊ ETÁ SEM SALDO, CLIQUE NO SALDO E EM ADICIONAR")
             }
             
         })

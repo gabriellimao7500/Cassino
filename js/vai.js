@@ -106,6 +106,8 @@ button.addEventListener("click", function(event){
     roletaSound.play()
     trava.classList.remove("none")
     setTimeout(resetspin, 12000);
+    }else{
+        window.alert("VOCÊ ETÁ SEM SALDO, CLIQUE NO SALDO E EM ADICIONAR")
     }                         
 } )
 

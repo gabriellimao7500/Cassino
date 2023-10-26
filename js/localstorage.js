@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //Armazena as informações do usuário no localStorage
             localStorage.setItem(username, password);
             alert("Registro concluído com sucesso. Você pode fazer login agora.");
+            window.location.href = "login.html"; 
         }
         registroForm.reset();
     });
